@@ -1,0 +1,480 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-size: 1.4rem;
+  text-align: justify;
+  word-spacing: 0.2rem;
+  padding: 0.3rem;
+  color: rgb(233, 223, 223);
+}
+a {
+  color: rgb(56, 13, 13);
+  font-weight: bold;
+}
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: rgb(87, 25, 25);
+  text-decoration: underline;
+  font-weight: bold;
+}
+h3 {
+  font-size: 1.4rem;
+  font-weight: normal;
+  text-align: center;
+  color: #fffbf9;
+  margin-top: 0.2rem;
+}
+h3::before {
+  content: "=> ";
+}
+em {
+  text-decoration: underline;
+  font-weight: normal;
+}
+h3 + p {
+  color: #d6c6be;
+  font-size: 1.2rem;
+  text-align: center;
+}
+body {
+  background: rgb(24, 21, 21);
+}
+main {
+  min-height: 100vh;
+  background: url("/images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  background: linear-gradient(
+    to right top,
+    rgba(155, 154, 142, 0.235),
+    rgba(122, 122, 148, 0.2)
+  );
+  width: 90%;
+  border-radius: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  backdrop-filter: blur(0.5rem);
+  box-shadow: 0 0 0.3rem #fff;
+}
+
+.left-container {
+  /* border-right: 0.1rem solid black; */
+  width: 30%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.user-image {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 1rem 1rem;
+}
+.user-image img {
+  width: 60%;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 5px rgb(163, 157, 157);
+}
+.user-image h1 {
+  font-size: 2.2rem;
+  text-align: center;
+  color: rgb(87, 25, 25);
+  text-shadow: 1px 1px 1px #6b3727;
+}
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.navbar ul li {
+  font-size: 2rem;
+  padding: 0.6rem;
+  margin: 0.6rem;
+  border-bottom: 0.1rem solid rgba(44, 30, 30, 0.3);
+  border-radius: 0.8rem;
+}
+.navbar ul li:hover {
+  background: rgb(117, 50, 50);
+  box-shadow: 0px 3px 2px rgb(20, 14, 14), 0px -1px 1px rgb(49, 48, 48);
+  color: rgb(240, 230, 230);
+  cursor: pointer;
+}
+
+.navbar ul li a {
+  color: rgb(87, 25, 25);
+  font-weight: bold;
+  padding-left: 2rem;
+  text-align: left;
+}
+.navbar ul li:hover a {
+  color: rgb(233, 223, 223);
+}
+.fas {
+  color: rgb(233, 223, 223);
+  display: inline-block;
+  cursor: pointer;
+}
+
+.fas:hover {
+  color: rgb(195, 165, 165) !important;
+}
+
+.social-icons {
+  color: rgb(87, 25, 25);
+  height: 10%;
+}
+
+.social-icons ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.social-icons ul li {
+  margin: 1rem;
+}
+.social-icons ul li:hover {
+  color: rgba(250, 236, 236, 0.719);
+}
+
+.fab {
+  font-size: 4rem;
+  padding: 0rem 0.5rem;
+  cursor: pointer;
+  color: rgb(117, 50, 50);
+  background: grey;
+  border: 0.2rem solid rgb(114, 92, 92);
+}
+.fab:hover {
+  background: rgb(117, 50, 50);
+  color: white;
+}
+/*Javascript animation**************************************************************************************/
+.home-section,
+.about-section,
+.projects-section,
+.experience-section,
+.education-section,
+.skills-section {
+  /* position: absolute; */
+  position: absolute;
+  opacity: 0;
+  width: 60%;
+}
+/*Default screen*/
+.home-section {
+  opacity: 1;
+}
+.clear {
+  clear: both;
+}
+/*Right container**********************************************************************************************/
+.right-container {
+  width: 60%;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.6rem;
+  margin: 1rem;
+
+  background: linear-gradient(
+    to right top,
+    rgba(226, 224, 206, 0.1),
+    rgba(191, 191, 216, 0.1)
+  );
+  backdrop-filter: blur(0.5rem);
+  border-radius: 2rem;
+  border-left: 0.3rem solid transparent;
+  box-shadow: -2px 0px 1px 0px rgb(90, 89, 77);
+  transition: all 1s ease;
+}
+#textWriter {
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.projects-section {
+  z-index: 1;
+}
+
+/*Experience Section*****************************************************************************************/
+.experience-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+.education-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+/*Skills Section starts******************************************************************************************/
+.skills-section {
+  width: 50%;
+  height: auto;
+  padding-top: 2rem;
+}
+.skill-container {
+  width: 90%;
+  height: 1rem;
+  border: 0.1rem solid rgb(161, 153, 153);
+  border-radius: 1rem;
+  margin: 1rem auto;
+}
+.skill > h2 {
+  color: rgba(250, 245, 235, 0.5);
+  font-family: "Courier New", Courier, monospace;
+}
+.bar {
+  box-shadow: 0 0 0.3rem 0.1rem rgb(117, 50, 50);
+  height: 0.4rem;
+
+  border-radius: 2rem;
+  border-right: 1rem solid white;
+  background: rgb(56, 13, 13);
+}
+.html {
+  animation: html 2s;
+  width: 90%;
+}
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+.css {
+  animation: css 2s;
+  width: 65%;
+}
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.bootstrap {
+  animation: bootstrap 2s;
+  width: 50%;
+}
+@keyframes bootstrap {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+.javascript {
+  animation: javascript 2s;
+  width: 45%;
+}
+@keyframes javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.csharp {
+  animation: csharp 2s;
+  width: 65%;
+}
+@keyframes csharp {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.sql {
+  animation: sql 2s;
+  width: 75%;
+}
+@keyframes csharp {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+/*Skills Section end*/
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 30%;
+  }
+
+  header {
+    width: 100%;
+  }
+  .left-container {
+    margin-bottom: 2rem;
+  }
+  .right-container {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+  }
+  .clear {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 40%;
+  }
+
+  header {
+    width: 100%;
+    min-height: 100vh;
+  }
+  .user-image img {
+    width: 40%;
+  }
+
+  /* .hero-section{
+    margin-bottom: 5rem;
+  } */
+
+  .right-container {
+    flex: 2;
+    width: 100%;
+    min-height: 100%;
+    box-shadow: none;
+    color: white;
+    border-left: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .experience-section {
+    width: 100%;
+  }
+  .education-section {
+    width: 90%;
+  }
+}
+/*Media section*/
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 48%;
+  }
+
+  .hero-section {
+    width: 100%;
+  }
+  .user-image img {
+    width: 48%;
+  }
+
+  .right-container {
+    width: 100%;
+    box-shadow: none;
+    border-radius: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: row;
+  }
+  /* .experience-section{
+      width: 80%;
+    } */
+}
+@media screen and (max-width: 1224px) {
+  html {
+    font-size: 56%;
+  }
+  header {
+    width: 80%;
+    height: 60%;
+  }
+
+  .user-image img {
+    width: 52%;
+  }
+  /* .user-image img {
+      width: 48%;
+    } */
+  .right-container {
+    height: 100vh;
+    width: 100%;
+    box-shadow: none;
+    border-radius: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: row;
+  }
+  .experience-section {
+    width: 60%;
+  }
+}
+/* @media screen and (max-width: 1680px) {
+    html {
+      font-size: 56%;
+    }
+    header {
+      width: 100%;
+    height: 50%;
+    }
+     .hero-section {
+      width: 200%;
+    } 
+    .user-image img {
+      width: 52%;
+    }
+    .user-image img {
+      width: 48%;
+    }
+    .right-container {
+      height: 100vh;
+      width: 90%;
+      box-shadow: none;
+      border-radius:1rem;
+      color: white;
+      display: flex;
+      flex-direction: row;
+    }
+    .experience-section{
+      width: 100%;
+    }
+  } */
