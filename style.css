@@ -31,7 +31,7 @@ h2 {
   font-weight: bold;
 }
 h3 {
-  font-size: 1.4rem;
+  font-size: 2rem;
   font-weight: normal;
   text-align: center;
   color: #fffbf9;
@@ -52,7 +52,7 @@ h3 + p {
 body {
   background: rgb(24, 21, 21);
 }
-main {
+#container {
   min-height: 100vh;
   background: url("images/background.jpg");
   background-size: cover;
