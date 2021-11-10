@@ -93,7 +93,7 @@ skillsElement.addEventListener("click", () => {
   skills.fadeIn();
 });
 let i = 0;
-let text = "Welcome to My Portfolio Website";
+let text = "Welcome!";
 let homeTitle = document.getElementById("home");
 function typeText() {
   if (i < text.length) {
