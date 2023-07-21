@@ -12,13 +12,13 @@
   <header>
     <div class="container">
       <nav>
-        <!-- <img src="/images/logo.png" alt="logo" class="logo"> -->
+        <img src="/images/logo.png" alt="logo" class="logo">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <div class="header-text">
@@ -36,9 +36,11 @@
         </div>
         <div class="about-col-2">
           <h1 class="sub-title">About me</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
-            . Magni consequatur a voluptates quia quod 
-            officia quasi nesciunt blanditiis hic ipsam!
+          <p>I am an experienced self-motivated junior web developer and I am
+            studying hard to improve myself to achieve my ambitions. I have been
+            teaching myself variety of technologies since November 2018 using
+            different learning sources including online courses. I am always
+            curious about new technologies and keen to learn more.
           </p>
           <div class="tab-titles">
             <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
@@ -47,29 +49,49 @@
           </div>
           <div class="tab-contents active-tab" id="skills">
             <ul>
-              <li><span>UI&UX</span><br>Designing Web/App Interfaces</li>
-              <li><span>Web Development</span><br>Web App Development</li>
-              <li><span>App Development</span><br>Building Android/iOS Apps</li>
+              <li><span>Frontend Development</span><br>HTML5, CSS3, Javascript, React.js, Bootstrap</li>
+              <li><span>Backend Development</span><br>Node.js, C#</li>
+              <li><span>Database</span><br>Mongo.DB, TSQL</li>
+              <li><span>Tools and Apps</span><br>Visual Studio Code, Visual Studio 2017-2019, Wordpress, SQL Server Management 2016, Postman</li>
             </ul>
           </div>
            <div class="tab-contents" id="experience">
             <ul>
-              <li><span>2021-current</span><br>Junior Web Developer</li>
-              <li><span>2019 - 2021</span><br>Tester</li>
-              <li><span>2017 - 2019</span><br>NHS - IT Operations Analyst</li>
+              <li><span>Junior Web Developer | The Developer Academy - June 2022 - January 2023 (Part Time)</span><br>
+              Worked on developing and maintaining several web applications using HTML5, CSS3, javascript, React.js 
+              Node.js. and MongoDB as the backend database.
+              <br>
+              Collaborated with cross-functional teams to ensure timely delivery of projects
+              <br>
+              Assisted in troubleshooting and debugging code issues
+
+              </li>
+              <li><span>Freelance Software Automation Tester | February 2021 - August 2021 (Part Time)</span>
+                <br>I worked as an automation tester, using Swagger, Postman, Azure
+                  platform, Space. I did not work with a UI to make tests so I was
+                  only responsible for endpoint tests on Swagger and Postman.
+                </li>
+              <li><span>Website Creation and Maintenance Using Wordpress | March 2020 - 2021</span>
+                <br>I voluntarily made a website for Community Contact Tracers who 
+                    have become well known nationally for their work during the pandemic</li>
+              <li><span>IT Service Operations Analyst | NHS Sheffield Teaching Hospitals Feb 2019 - Feb 2020 | March 2020 - 2021</span>
+                <br>Making digital forms and dashboards for different departments by using Cherwell Business Management tool
+                  Following user accounts requests, restoring development environments using Cherwell, Commvault, SQL Server Management Studio 2016
+              </li>
             </ul>
           </div>
            <div class="tab-contents" id="education">
             <ul>
-              <li><span>2021</span><br>Completed The Developer Academy Bootcamp</li>
-              <li><span>2006</span><br>Tourism and Hotel Management</li>
-              <li><span>2008</span><br>ESL</li>
+              <li><span>The Developer Academy | Sheffield, England | 2022</span><br>Completed The Developer Academy Sector Routeways Digital Bootcamp</li>
+              <li><span>Virginia International University | Fairfax, Virginia, USA| June 2008 - August 2008</span><br>Associate Degree - English as a Second Language</li>
+              <li><span>Abant Izzet Baysal University | Duzce, Turkey | September 2001 - Jun 2006</span><br>Bechelor Degree - Tourism And Hotel Management</li>
             </ul>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <hr class="line">
   <!---------------Services------------------------------->
   <div id="services">
     <div class="container">
@@ -108,6 +130,7 @@
        </div>
     </div>
   </div>
+   <hr class="line">
   <!------------------Projects--------------------------->
   <div id="projects">
     <div class="container">
@@ -117,7 +140,7 @@
             <img src="images/Beat-maker.PNG" alt="project 1">
             <div class="layer">
               <h3>Beat Maker Project</h3>
-              <p>Made with Html, CSS and Javascript</p>
+              <p>Made with Html, CSS and Javascript. This application lets the user create their own music with different sound effects</p>
               <a href="https://erman01.github.io/Beat_Maker/" target="_blank"><i class="fa-solid fa-link"></i></a>
             </div>
           </div>
@@ -125,21 +148,25 @@
             <img src="images/cct.PNG" alt="project 2">
              <div class="layer">
               <h3>Wordpress Web Project</h3>
-              <p>Sheffield Community Contact Tracers</p>
+              <p>
+                Sheffield Community Contact Tracers. I voluntarily made a website for Community Contact Tracers
+                 who have become well known nationally for their work during the pandemic
+                </p>
                <a href="https://www.communitycontacttracers.com/" target="_blank"><i class="fa-solid fa-link"></i></a>
             </div>
           </div>
           <div class="project">
             <img src="images/the_developer-academy.PNG" alt="project 3">
              <div class="layer">
-              <h3>The Developer Academy Website</h3>
-              <p>Made with Html, CSS and React.js</p>
-               <a href="https://thedeveloperacademy.com/" target="_blank"><i class="fa-solid fa-link"></i></a>
+              <h3>Todo React Application</h3>
+              <p>Made with Html, CSS and React.js </p>
+               <a href="https://erman01.github.io/Assignment_React_ToDo/" target="_blank"><i class="fa-solid fa-link"></i></a>
             </div>
           </div>
         </div>
     </div>
   </div>
+  <hr class="line">
   <!------------------Contact--------------------------->
   <div id="contact">
     <div class="container">
@@ -151,7 +178,7 @@
             <a href="https://github.com/Erman01" target="_blank"><i class="fa-brands fa-github"></i></a>
             <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
           </div>
-          <a href="" class="btn" download><i class="fa-solid fa-file"></i>Download CV</a>
+          <a href="images/Erman-CV-21-07-23.pdf" class="btn" download><i class="fa-solid fa-file"></i>Download CV</a>
         </div>
          <div class="contact-right">
           <form>
@@ -163,6 +190,7 @@
          </div>
       </div>
     </div>
+     <hr class="line">
     <div class="copyright">
       <p>Copyright &copy</p>
     </div>
