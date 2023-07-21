@@ -34,6 +34,7 @@ nav{
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  
 }
 .logo{
   width: 180px;
@@ -169,6 +170,7 @@ h1::first-letter{
   font-weight: 300;
   border-radius: 10px;
   transition: background 0.7s, transform 0.5s;
+ 
 }
 .services-list div i{
   font-size: 50px;
@@ -187,7 +189,7 @@ h1::first-letter{
   display: inline-block;
 }
 .services-list div:hover{
-  background: linear-gradient(rgba(0,0,0,0.6),#0468af);
+  background: linear-gradient(rgba(36, 36, 36, 0.6),#0468af);
   transform: translateY(-10px);
 }
 /* -------------------Projects----------------- */
@@ -209,6 +211,7 @@ padding: 50px 0;
   border-radius: 5px;
   display: block;
   transition: transform 0.5s;
+   opacity: 0.4;
 }
 .layer{
   width: 100%;
