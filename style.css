@@ -18,12 +18,13 @@ hr.line{
 header{
   width: 100%;
   height: 100vh;
-  background-image: url(images/laptop-background.jpg); 
+  background-image: url(images/background_dark.png); 
   background-size: cover;
   background-position: center;
-  filter: blur(-5px);
+  opacity: 0.8;
  
 }
+
 .container{
   padding:50px 10%;
  
@@ -45,16 +46,17 @@ nav ul li{
 }
 nav ul li a{
   
-  color: #fff;
+  color: white;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
   position: relative;
+  font-weight: 500;
 }
 nav ul li a::after{
   content: '';
   width: 0;
   height: 3px;
-  background:#047cd2;
+  background:#057bd0;
   position: absolute;
   left: 0;
   bottom: -6px;
@@ -69,6 +71,10 @@ nav ul li a:hover::after{
 }
 .header-text h1{
   font-size: 60px;
+  
+}
+h1::first-letter{
+  color:#0468af;
 }
 .header-text p{
   margin-top: 20px;
@@ -89,10 +95,13 @@ nav ul li a:hover::after{
 .about-col-1 img{
   width: 100%;
   border-radius: 10px;
-  background-color: white;
+  background: #ababab;
+  background: linear-gradient(135deg, #ababab, #0468af);
   padding: 20px;
   border-radius: 50%;
 }
+
+
 .about-col-2{
   flex-basis: 60%;
 }
@@ -116,7 +125,7 @@ nav ul li a:hover::after{
   content: '';
   width: 0;
   height: 3px;
-  background:#047cd2;
+  background:#0468af;
   position: absolute;
   left: 0;
   bottom: -8px;
@@ -178,10 +187,10 @@ nav ul li a:hover::after{
   display: inline-block;
 }
 .services-list div:hover{
-  background: #047cd2;
+  background: linear-gradient(rgba(0,0,0,0.6),#0468af);
   transform: translateY(-10px);
 }
-/* -------------------Portfolio----------------- */
+/* -------------------Projects----------------- */
 #projects{
 padding: 50px 0;
 }
@@ -197,7 +206,7 @@ padding: 50px 0;
   overflow: hidden;
 }
 .project img{
-  border-radius: 10px;
+  border-radius: 5px;
   display: block;
   transition: transform 0.5s;
 }
@@ -205,7 +214,7 @@ padding: 50px 0;
   width: 100%;
   height: 0;
   background: linear-gradient(rgba(0,0,0,0.6),#0468af);
-  border-radius: 10px;
+  border-radius: 5px;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -284,13 +293,13 @@ padding: 50px 0;
   display: block;
   margin: 50px 0;
   width: fit-content;
-  border: 1px solid #047cd2;
+  border: none;
   padding: 14px 50px;
   border-radius: 6px;
   color: white;
   text-decoration: none;
   cursor: pointer;
-  background:#047cd2 ;
+  background:linear-gradient(rgba(66, 65, 65, 0.6),#0468af) ;
    transition: transform 0.5s;
    font-size: 25px;
 }
