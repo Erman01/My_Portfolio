@@ -143,6 +143,11 @@ h1::first-letter{
   background: #262626;
   padding: 20px;
   border-radius: 5px;
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+.tab-contents ul li:hover{
+   transform: translateX(-10px);
 }
 .tab-contents ul li span{
   color: white;
