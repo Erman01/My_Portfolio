@@ -13,17 +13,19 @@
     <div class="container">
       <nav>
         <img src="/images/ermanlogo.png" alt="logo" class="logo">
-        <ul>
+        <ul id="sideMenu">
           <li><a href="#header">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
         </ul>
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
       </nav>
       <div class="header-text">
         <h1>Hi, I'm Erman</h1>
-         <p>Junior Web Developer</p>
+         <p>I'm a Junior Web Developer</p>
       </div>
     </div>
   </header>
@@ -189,7 +191,7 @@
         </div>
          <div class="contact-right">
           <form>
-            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <textarea name="message" rows="6" placeholder="Type Your Message..."></textarea>
             <button type="submit" class="btn btn2"></i>Submit</button>
@@ -201,6 +203,17 @@
       <p>Copyright &copy</p>
     </div>
   </div>
+  <!-- <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzXpFollWSUUJnlciy73SUT0xWtM-8HzQRr4fdaOiM0SxpecA7fl_ytsOQDfELhVMf_Ig/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+  </script> -->
   <script src="index.js"></script>
 </body>
 </html>

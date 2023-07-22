@@ -12,4 +12,18 @@ function openTab(tabName) {
   event.currentTarget.classList.add("active-link");
   document.getElementById(tabName).classList.add("active-tab");
 }
-//End of About page skills, experience, education 
+//End of About page skills, experience, education
+
+// Mobile menu open&close
+let sideMenu = document.getElementById("sideMenu");
+
+function openMenu() {
+  sideMenu.style.right = "0";
+}
+function closeMenu() {
+  sideMenu.style.right = "0";
+}
+
+/* --------------Contact form */
+
+  /* -----------End of Contact Form-------------- */
