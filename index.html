@@ -7,6 +7,15 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
   crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+   (function(){
+      emailjs.init("0UruFJZGzE6WDIGRJ");
+   })();
+   </script>
+ 
 </head>
 <body>
   <header>
@@ -190,11 +199,13 @@
           <a href="images/Erman-CV-21-07-23.pdf" class="btn" download><i class="fa-solid fa-file"></i>Download CV</a>
         </div>
          <div class="contact-right">
-          <form>
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="6" placeholder="Type Your Message..."></textarea>
-            <button type="submit" class="btn btn2"></i>Submit</button>
+          <form id="contact-form">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <!-- <input type="text" id="subject" name="subject" placeholder="Subject" required> -->
+           
+            <textarea name="message" id="message" rows="6" placeholder="Type Your Message..."></textarea>
+            <button type="submit" class="submit-btn"></i>Submit</button>
           </form>
          </div>
       </div>
@@ -203,17 +214,8 @@
       <p>Copyright &copy</p>
     </div>
   </div>
-  <!-- <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbzXpFollWSUUJnlciy73SUT0xWtM-8HzQRr4fdaOiM0SxpecA7fl_ytsOQDfELhVMf_Ig/exec'
-  const form = document.forms['submit-to-google-sheet']
-
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
-      .catch(error => console.error('Error!', error.message))
-  })
-  </script> -->
+ 
   <script src="index.js"></script>
+  
 </body>
 </html>
