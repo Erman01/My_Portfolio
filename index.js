@@ -15,34 +15,17 @@ function openTab(tabName) {
 //End of About page skills, experience, education
 
 // Mobile menu open&close
-let sideMenu = document.getElementById("sideMenu");
+let sidemenu = document.getElementById("sideMenu");
 
 function openMenu() {
-  sideMenu.style.right = "0";
+  sidemenu.style.right = "0";
 }
 function closeMenu() {
-  sideMenu.style.right = "0";
+  sidemenu.style.right = "-200px";
 }
 
 /* --------------Contact form */
 
-// function sendMail() {
-//   var tempParams = {
-//     name: document.getElementById("name").value,
-//      email: document.getElementById("email").value,
-//     subject: document.getElementById("subject").value,
-//     message: document.getElementById("message").value
-//   };
-//   const serviceID = "service_d3ekv9c";
-//   const templateID = "template_x58txm5";
-//   emailjs.send(serviceID, templateID, tempParams).then((res) => {
-//       document.getElementById("name").value = "";
-//       document.getElementById("email").value = "";
-//       document.getElementById("subject").value = "";
-//       document.getElementById("message").value = "";
-//       alert("your message sent");
-//     }).catch((err) => console.log(err));
-//   }
 const contactForm = document.querySelector("#contact-form");
 const submitButton = document.querySelector(".submit-btn");
 const nameInput = document.querySelector("#name");
@@ -80,7 +63,5 @@ contactForm.addEventListener("submit", e => {
 })
 /* -----------End of Contact Form-------------- */
   
-/* Scroll Effect */
 
-    // Get the current page scroll position
    
