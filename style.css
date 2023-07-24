@@ -34,12 +34,19 @@ nav{
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: fixed;
+  right: 100px;
+  top: 60px;
+  z-index: 1;
  
   
 }
 .logo{
   width: 180px;
   border-radius: 10px;
+  position: fixed;
+  left: 100px;
+  top: 60px;
 }
 nav ul li{
   display: inline-block;
@@ -413,6 +420,10 @@ nav .fas{
 }
 .colored{
   font-size: 20px !important;
+}
+.logo{
+  left: 30px;
+  top:45px
 }
 nav .fas{
   display: block;
