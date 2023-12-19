@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <title>Oklavam</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
@@ -21,13 +21,13 @@
 <body>
   <header>
     <div class="container">
+     
       <nav>
-      
         <ul id="sideMenu">
-          <li><a href="#header">Home</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">Products</a></li>
           <!-- <li><a href="#services">Services</a></li> -->
-          <li><a href="#projects">Projects</a></li>
+          <!-- <li><a href="#projects">Projects</a></li> -->
           <li><a href="#contact">Contact</a></li>
           <i class="fas fa-times" onclick="closeMenu()"></i>
         </ul>
@@ -35,81 +35,73 @@
       </nav>
     </div>
     <div class="concrete">
+       <div class="logo-container">
+         <img class="logo-top" src="images/oklavamlogo.png" alt="logo">
+      </div>
       <div class="header-text">
         <!-- <h1 class="text">Hi, I'm Erman</h1> -->
-        <h1 class="text-overlay">Hi, I'm Erman</h1>
+        <h1 class="text-overlay"><span class="toy-letter">Ok</span>lava<span class="toy-letter">M</span></h1>
       </div>
-      <div class="header-text">
-         <!-- <h1 class="text">I'm a Junior Web Developer</h1> -->
-          <h1 id="text-writer" class="text-overlay colored"></h1>
-      </div>
+    
       </div>
   </header>
   <!--------------About Section---------------------------->
   <div id="about">
     <div class="container">
       <div class="row">
-        <div class="about-col-1">
-          <img src="images/about.png" alt="about me">
-        </div>
+        <!-- <div class="about-col-1">
+          <img src="images/mixed-toast2.png" alt="about me">
+        </div> -->
         <div class="about-col-2">
-          <h1 class="sub-title">About Me</h1>
-          <p>I am an experienced self-motivated junior web developer and I am
-            studying hard to improve myself to achieve my ambitions. I have been
-            teaching myself variety of technologies since November 2018 using
-            different learning sources including online courses. I am always
-            curious about new technologies and keen to learn more.
+          <h1 class="sub-title">Products</h1>
+          <p class="about-desc">Welcome to our menu. Our products will give you a different bakery experience...
           </p>
           <div class="tab-titles">
-            <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
-            <p class="tab-links" onclick="openTab('experience')">Experience</p>
-            <p class="tab-links" onclick="openTab('education')">Education</p>
-             <p class="tab-links" onclick="openTab('interests')">Interests</p>
+            <p class="tab-links active-link" onclick="openTab('skills')">Toasts</p>
+            <p class="tab-links" onclick="openTab('experience')">Pogaca</p>
+            <p class="tab-links" onclick="openTab('education')">Hot Drinks</p>
+             <p class="tab-links" onclick="openTab('interests')">Cold Drinks</p>
+             <p class="tab-links" onclick="openTab('deserts')">Deserts</p>
           </div>
           <div class="tab-contents active-tab" id="skills">
             <ul>
-              <li><span>Frontend Development</span><br>HTML5, CSS3, Javascript, React.js, Bootstrap</li>
-              <li><span>Backend Development</span><br>Node.js, C#</li>
-              <li><span>Database</span><br>Mongo.DB, TSQL</li>
-              <li><span>Tools and Apps</span><br>Visual Studio Code, Visual Studio 2017-2019, Wordpress, SQL Server Management 2016, Postman</li>
+              <li><span>Plain Toast - <i class="price">##</i></span><br>Ingredients : Special Toast Bread, Tomatoe Souce, Cheese, Butter</li>
+              <li><span>Salami Toast - <i class="price">##</i></span><br>Ingredients : Special Toast Bread, Tomatoe Souce, Salami, Butter</li>
+              <li><span>Mixed Toast - <i class="price">##</i></span><br>Ingredients : Special Toast Bread, Tomatoe Souce, Cheese, Salami, Butter</li>
+              <!-- <li><span>Fruit Toast - <i class="price">##</i></span><br>Ingredients : Special Toast Bread, Banana, Chocolatte</li> -->
             </ul>
           </div>
            <div class="tab-contents" id="experience">
             <ul>
-              <li><span>Junior Web Developer | The Developer Academy - June 2022 - January 2023 (Part Time)</span><br>
-              - Worked on developing and maintaining several web applications using HTML5, CSS3, javascript, React.js 
-              Node.js. and MongoDB as the backend database.
-              <br>
-              - Collaborated with cross-functional teams to ensure timely delivery of projects
-              <br>
-              - Assisted in troubleshooting and debugging code issues
-
-              </li>
-              <li><span>Freelance Software Automation Tester | February 2021 - August 2021 (Part Time)</span>
-                <br>I worked as an automation tester, using Swagger, Postman, Azure
-                  platform, Space. I did not work with a UI to make tests so I was
-                  only responsible for endpoint tests on Swagger and Postman.
-                </li>
-              <li><span>Website Creation and Maintenance Using Wordpress | March 2020 - 2021</span>
-                <br>I voluntarily made a website for Community Contact Tracers who 
-                    have become well known nationally for their work during the pandemic</li>
-              <li><span>IT Service Operations Analyst | NHS Sheffield Teaching Hospitals Feb 2019 - Feb 2020 | March 2020 - 2021</span>
-                <br>Making digital forms and dashboards for different departments by using Cherwell Business Management tool
-                  Following user accounts requests, restoring development environments using Cherwell, Commvault, SQL Server Management Studio 2016
-              </li>
+              <li><span>Plain Pogaca - <i class="price">##</i></span> <br>Ingredients :  Feta Cheese, Parsley</li>
+              <li><span>Salami Pogaca - <i class="price">##</i></span><br>Ingredients : Salami, Mild Cheeze</li>
+              <li><span>Mixed Pogaca - <i class="price">##</i></span><br>Ingredients : Cheese, Salami, Red Paper</li>
+              <li><span>Chocolate Pogaca - <i class="price">##</i></span><br>Ingredients : Chocolatte</li>          
+               <li><span>Four Cheese Pogaca - <i class="price">##</i></span><br>Ingredients : Feta, Mozarella, Mild Cheese, Paneer</li>
             </ul>
           </div>
            <div class="tab-contents" id="education">
-            <ul>
-              <li><span>The Developer Academy | Sheffield, England | 2022</span><br>Completed The Developer Academy Sector Routeways Digital Bootcamp</li>
-              <li><span>Virginia International University | Fairfax, Virginia, USA| June 2008 - August 2008</span><br>Associate Degree - English as a Second Language</li>
-              <li><span>Abant Izzet Baysal University | Duzce, Turkey | September 2001 - Jun 2006</span><br>Bechelor Degree - Tourism And Hotel Management</li>
+           <ul>
+              <li><span>Tea - <i class="price">##</i></li>
+              <li><span>Americano - <i class="price">##</i></li>
+              <li><span>Cappucinno - <i class="price">##</i></li>
+                   
             </ul>
           </div>
            <div class="tab-contents" id="interests">
             <ul>
-              <li>Retro computers, console games, watching movies, family time, cooking, running and weekly exercises.</li>
-              
+                <li><span>Water - <i class="price">##</i></li>
+                <li><span>Coke - <i class="price">##</i></li>
+                <li><span>Fanta - <i class="price">##</i></li>
+                <li><span>Sprite - <i class="price">##</i></li>
+            </ul>
+          </div>
+           <div class="tab-contents" id="deserts">
+            <ul>
+                <li><span>Chocolate Pogaca - <i class="price">##</i> </span></li>
+                <li><span>Cookies - <i class="price">##</i></span></li>
+                 <li><span>Carrot Cake - <i class="price">##</i></span></li>
+                  <li><span>Chocolate Creamy Cake - <i class="price">##</i></span></li>
             </ul>
           </div>
         </div>
@@ -157,7 +149,7 @@
   </div> -->
    <!-- <hr class="line"> -->
   <!------------------Projects--------------------------->
-  <div id="projects">
+  <!-- <div id="projects">
     <div class="container">
         <h1 class="sub-title">My Projects</h1>
         <div class="projects-list">
@@ -190,20 +182,22 @@
           </div>
         </div>
     </div>
-  </div>
-  <hr class="line">
+  </div> -->
+
   <!------------------Contact--------------------------->
   <div id="contact">
     <div class="container">
       <div class="row">
         <div class="contact-left">
-          <h1 class="sub-title">Contact Me</h1>
+          <h1 class="sub-title">Contact Us</h1>
           <div class="social-icons">
             <p><i class="fa-solid fa-location-dot"></i>Sheffield, England</p>
-            <a href="https://github.com/Erman01" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://github.com/Erman01" target="_blank"><i class="fa-brands fa-facebook"></i></i></a>
             <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
           </div>
-          <a href="images/Erman-CV-21-07-23.pdf" class="btn" download><i class="fa-solid fa-file"></i>Download CV</a>
+          <!-- <a href="images/Erman-CV-21-07-23.pdf" class="btn" download><i class="fa-solid fa-file"></i>Download CV</a> -->
         </div>
          <div class="contact-right">
           <form id="contact-form">
@@ -218,7 +212,7 @@
       </div>
     </div>
     <div class="copyright">
-      <p>Copyright &copy</p>
+      <p>Oklavam Copyright &copy</p>
     </div>
   </div>
  

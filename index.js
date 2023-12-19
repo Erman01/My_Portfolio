@@ -63,17 +63,17 @@ contactForm.addEventListener("submit", e => {
 })
 /* -----------End of Contact Form-------------- */
 /*----------------Type writer --------------- */
-let i = 0, text;
-text= "I'm a Junior Web Developer";
+// let i = 0, text;
+// text= "I'm a Junior Web Developer";
 
-function typing() {
-  if (i < text.length) {
-    document.getElementById("text-writer").innerHTML += text.charAt(i);
-    i++;
-    setTimeout(typing, 100);
-  }
-}
-typing();
+// function typing() {
+//   if (i < text.length) {
+//     document.getElementById("text-writer").innerHTML += text.charAt(i);
+//     i++;
+//     setTimeout(typing, 100);
+//   }
+// }
+// typing();
   
 
    
